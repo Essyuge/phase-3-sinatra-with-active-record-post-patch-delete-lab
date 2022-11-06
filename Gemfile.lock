@@ -33,9 +33,12 @@ GEM
     minitest (5.14.4)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
+    nio4r (2.5.8)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
+    puma (6.0.0)
+      nio4r (~> 2.0)
     rack (2.2.3)
     rack-contrib (2.3.0)
       rack (~> 2.0)
@@ -81,12 +84,14 @@ GEM
 
 PLATFORMS
   universal-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   activerecord (~> 6.1)
   database_cleaner
   faker (~> 2.18)
   pry
+  puma
   rack-contrib (~> 2.3)
   rack-test (~> 1.1)
   rake
@@ -99,4 +104,4 @@ DEPENDENCIES
   sqlite3 (~> 1.4)
 
 BUNDLED WITH
-   2.2.23
+   2.2.24
